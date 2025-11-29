@@ -113,3 +113,23 @@ Interactions avec lien de paiement : {paiements}
 
 if __name__ == "__main__":
     generer_bilan()
+import gradio as gr
+from noel_message import encode_string, decode_string, is_christmas_season
+
+def interagir(message):
+    if not is_christmas_season():
+        return "⛄ Ce n’est pas encore la saison de Noël ! Reviens en novembre ou décembre 🎄"
+    encoded = encode_string(message)
+    decoded = decode_string(encoded)
+    return f"🔐 Encodé : {encoded}\n🔓 Décodé : {decoded}"
+
+iface = gr.Interface(
+    fn=interagir,
+    inputs=gr.Textbox(label="🎁 Ton message de Noël"),
+    outputs=gr.Textbox(label="🎄 Résultat"),
+    title="Encodeur de Message Festif",
+    description="Tape un message de Noël et découvre sa magie encodée ✨"
+)
+
+if __name__ == "__main__":
+    iface.launch()
