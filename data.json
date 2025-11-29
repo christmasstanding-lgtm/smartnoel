@@ -31,7 +31,5 @@ Demandes de cartes : {cartes}
 Interactions avec lien de paiement : {paiements}
 """
 
-    print(bilan)
-
-if __name__ == "__main__":
+    if __name__ == "__main__":
     generer_bilan()
