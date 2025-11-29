@@ -1,35 +1,5 @@
 []
-import json
-from datetime import datetime
-from collections import Counter
-
-def generer_bilan():
-    try:
-        with open("data.json", "r", encoding="utf-8") as f:
-            data = json.load(f)
-    except FileNotFoundError:
-        print("Aucune donnée trouvée.")
-        return
-
-    if not data:
-        print("Aucune interaction enregistrée.")
-        return
-
-    total = len(data)
-    pays_counter = Counter([entry["pays"] for entry in data])
-    messages_counter = Counter([entry["message"].lower() for entry in data if "message" in entry])
-
-    print("🎄 Bilan annuel SmartNoël -", datetime.now().year)
-    print("Nombre d'interactions :", total)
-    print("Nombre de pays différents :", len(pays_counter))
-    print("Pays les plus cités :", pays_counter.most_common(3))
-    print("Messages les plus fréquents :", messages_counter.most_common(3))
-    print("Dernière interaction :", data[-1]["date"] if "date" in data[-1] else "inconnu")
-
-if __name__ == "__main__":
-    generer_bilan()
-[
-  {
+ {
     "date": "2025-11-29T15:00:00",
     "message": "Je cherche une idée de cadeau pour ma sœur",
     "reponse": "🎁 Une idée cadeau pour France : un mug personnalisé ou un livre magique !",
