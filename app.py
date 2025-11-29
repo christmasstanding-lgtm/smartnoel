@@ -76,3 +76,4 @@ def enregistrer_interaction(message, reponse, pays):
 
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
+[]
