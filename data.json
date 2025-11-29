@@ -28,3 +28,49 @@ def generer_bilan():
 
 if __name__ == "__main__":
     generer_bilan()
+[
+  {
+    "date": "2025-11-29T15:00:00",
+    "message": "Je cherche une idée de cadeau pour ma sœur",
+    "reponse": "🎁 Une idée cadeau pour France : un mug personnalisé ou un livre magique !",
+    "pays": "France",
+    "paiement": "Non"
+  },
+  {
+    "date": "2025-11-29T15:05:00",
+    "message": "As-tu une carte de vœux ?",
+    "reponse": "💌 Voici une carte de vœux festive pour France : 'Joyeux Noël et Bonne Année !'",
+    "pays": "France",
+    "paiement": "Non"
+  },
+  {
+    "date": "2025-11-29T15:10:00",
+    "message": "Je veux faire un don via paypal.me",
+    "reponse": "Merci pour ton soutien ! Voici le lien : paypal.me/smartnoel",
+    "pays": "Côte d’Ivoire",
+    "paiement": "Oui"
+  }
+]
+[
+  {
+    "date": "2025-11-29T15:00:00",
+    "message": "Je cherche une idée de cadeau pour ma sœur",
+    "reponse": "🎁 Une idée cadeau pour France : un mug personnalisé ou un livre magique !",
+    "pays": "France",
+    "paiement": "Non"
+  },
+  {
+    "date": "2025-11-29T15:05:00",
+    "message": "As-tu une carte de vœux ?",
+    "reponse": "💌 Voici une carte de vœux festive pour France : 'Joyeux Noël et Bonne Année !'",
+    "pays": "France",
+    "paiement": "Non"
+  },
+  {
+    "date": "2025-11-29T15:10:00",
+    "message": "Je veux faire un don via paypal.me",
+    "reponse": "Merci pour ton soutien ! Voici le lien : paypal.me/smartnoel",
+    "pays": "Côte d’Ivoire",
+    "paiement": "Oui"
+  }
+]
