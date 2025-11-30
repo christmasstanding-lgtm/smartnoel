@@ -1,4 +1,8 @@
+# 🎄 SmartNoël – Clara, l’assistante magique de Noël
 
+[![Tester sur Hugging Face](https://img.shields.io/badge/🎄%20Tester%20Clara%20en%20ligne-blue)](https://huggingface.co/spaces/Daou/smartnoel)
+
+Bienvenue dans SmartNoël, une application festive propulsée par Gradio...
 import gradio as gr
 from utils import repondre_clara, enregistrer_interaction
 
