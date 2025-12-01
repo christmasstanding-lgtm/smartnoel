@@ -23,3 +23,8 @@ iface = gr.Interface(
 )
 
 iface.launch()
+
+Festive bot developer.  
+> ✨ Christmas, AI, and creativity in service of a magical world.  
+> 🎁 Hugging Face + GitHub = enchanted solution.
+
