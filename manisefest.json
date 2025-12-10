@@ -1,0 +1,16 @@
+{
+  "name": "SmartNoël Clara",
+  "short_name": "Clara",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#fdf6f0",
+  "theme_color": "#d62828",
+  "icons": [
+    {
+      "src": "assets/icon-clara.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "description": "Clara, l’assistante magique de Noël 🎄 – multilingue et universelle"
+}
