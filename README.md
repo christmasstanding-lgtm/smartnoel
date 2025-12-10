@@ -1,3 +1,7 @@
+> 🎄 Clara est une application festive, multilingue et universelle.  
+> Elle vit ici, dans GitHub, prête à être téléchargée, installée, et célébrée.  
+> Aucun hébergement requis. Juste de la magie ✨
+
 # 🎄 SmartNoël – Clara, l’assistante magique de Noël
 
 [![Tester sur Hugging Face](https://img.shields.io/badge/🎄%20Tester%20Clara%20en%20ligne-blue)](https://huggingface.co/spaces/Daou/smartnoel)
