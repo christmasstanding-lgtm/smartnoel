@@ -1,6 +1,6 @@
 > 🎄 Clara est une application festive, multilingue et universelle.  
 > Elle vit ici, dans GitHub, prête à être téléchargée, installée, et célébrée.  
-> Aucun hébergement requis. Juste de la magie ✨
+> Aucun hébergement requis ✨
 
 # 🎄 SmartNoël – Clara, l’assistante magique de Noël
 
