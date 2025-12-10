@@ -133,3 +133,41 @@ iface = gr.Interface(
 
 if __name__ == "__main__":
     iface.launch()
+    import streamlit as st
+from datetime import datetime
+import base64
+
+st.set_page_config(
+    page_title="SmartNoël – Clara",
+    page_icon="assets/icon-clara.png",
+    layout="centered"
+)
+
+st.image("assets/banniere-smartnoel.png", use_column_width=True)
+
+ua = st.experimental_get_query_params().get("ua", [""])[0]
+if "Android" in ua or "iPhone" in ua:
+    st.success("📱 Bonjour depuis un mobile ! Clara t'accompagne partout 🎁")
+else:
+    st.info("🖥️ Bonjour depuis un ordinateur ! Clara est prête à t'aider 🎄")
+
+st.header("🎄 Clara, l’assistante magique de Noël")
+message = st.text_input("🎁 Ton message de Noël")
+
+def encode_string(s):
+    return base64.b64encode(s.encode("utf-8")).decode("utf-8")
+
+def decode_string(s):
+    return base64.b64decode(s.encode("utf-8")).decode("utf-8")
+
+def is_christmas_season():
+    return datetime.now().month in [11, 12]
+
+if st.button("Envoyer à Clara"):
+    if not is_christmas_season():
+        st.warning("⛄ Ce n’est pas encore la saison de Noël ! Reviens en novembre ou décembre 🎄")
+    else:
+        encoded = encode_string(message)
+        decoded = decode_string(encoded)
+        st.text_area("🔐 Encodé", encoded)
+        st.text_area("🔓 Décodé", decoded)
